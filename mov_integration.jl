@@ -11,7 +11,6 @@ function md(data::Data,MDinputs::MDinput)
   times = 0.
 
   for i in 1:nsteps
-
     ut = force!(box, data, force_vec, fatm, natm, nc)
     times = times + dt
 
